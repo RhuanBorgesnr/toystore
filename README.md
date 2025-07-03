@@ -144,6 +144,3 @@ Certifique-se de reiniciar o servidor do frontend após alterar o .env.
 - Estatísticas de vendas por dia: `/api/sales/statistics/`
 - Estatísticas de clientes: `/api/sales/customers/statistics/`
 
----
-
-Pronto para uso e testes. 
