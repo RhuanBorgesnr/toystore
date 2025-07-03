@@ -75,6 +75,16 @@ Para acessar os endpoints protegidos, gere um token JWT usando o endpoint `/api/
 > **Atenção:**
 > Após criar o superusuário com `python manage.py createsuperuser`, acesse o admin (`/admin/`), após será possível autenticar e obter o token JWT normalmente.
 
+## Autenticação e Token
+
+Após criar o usuário e gerar o token de autenticação, adicione o token ao arquivo `.env` na raiz do frontend (ui/), por exemplo:
+
+```
+REACT_APP_API_TOKEN=seu_token_aqui
+```
+
+Certifique-se de reiniciar o servidor do frontend após alterar o .env.
+
 ## Como rodar os testes
 
 1. Volte para a raiz do projeto:
