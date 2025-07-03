@@ -34,9 +34,6 @@ Você pode iniciar a aplicação de duas formas:
 
 O banco já contém dados de exemplo e dois usuários padrão:
 
-- **Usuário:** teste
-- **Senha:** teste
-
 - **Usuário:** usuario_teste
 - **Senha:** teste123
 - **Token de autenticação (usuario_teste):** eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzMTA5MTIyLCJpYXQiOjE3NTE1NzMxMjIsImp0aSI6IjVlOTlmZmFiNjhjYjQ2NzBhYmM2NzNkZjg1NmIwMThhIiwidXNlcl9pZCI6MzF9.ZcQ1wIYnnnoPH5CYlWxNYZ93aro89fUtMnd9hbIUatY
@@ -46,7 +43,7 @@ O banco já contém dados de exemplo e dois usuários padrão:
 > Este token deve ser colocado no arquivo `.env`, por exemplo:
 >
 > ```env
-> TOKEN=SEU_TOKEN_AQUI
+> REACT_APP_JWT_TOKEN=SEU_TOKEN_AQUI
 > ```
 
 Assim, é possível autenticar e testar a API imediatamente.
