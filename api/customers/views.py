@@ -24,7 +24,7 @@ class CustomerViewSet(viewsets.ModelViewSet):
         return CustomerSerializer
 
     def list(self, request, *args, **kwargs):
-        queryset = self.filter_queryset(self.get_queryset())
+        queryset = self.filter_queryset(self.get_queryset()).exclude(is_superuser=True)
         page = self.paginate_queryset(queryset)
         serializer = self.get_serializer(page if page is not None else queryset, many=True)
         response_data = {
