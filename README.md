@@ -4,7 +4,7 @@
 
 1. Clone o repositório e acesse a pasta do projeto:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/RhuanBorgesnr/toystore
    cd toystore
    ```
 
