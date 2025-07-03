@@ -65,19 +65,19 @@ export const Statistics: React.FC = () => {
         <div>
           {customerStats.highest_volume && (
             <HighlightCard color="#ffe082">
-              <span role="img" aria-label="volume">🏆</span> <b>Maior volume de vendas:</b> {customerStats.highest_volume.customer.full_name} <br/>
+              <span role="img" aria-label="volume"></span> <b>Maior volume de vendas:</b> {customerStats.highest_volume.customer.full_name} <br/>
               <small>Total vendido: R$ {customerStats.highest_volume.total_sales.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</small>
             </HighlightCard>
           )}
           {customerStats.highest_average && (
             <HighlightCard color="#b2ffb2">
-              <span role="img" aria-label="media">💰</span> <b>Maior média por venda:</b> {customerStats.highest_average.customer.full_name} <br/>
+              <span role="img" aria-label="media"></span> <b>Maior média por venda:</b> {customerStats.highest_average.customer.full_name} <br/>
               <small>Média: R$ {customerStats.highest_average.average_sale.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</small>
             </HighlightCard>
           )}
           {customerStats.highest_frequency && (
             <HighlightCard color="#b3e5fc">
-              <span role="img" aria-label="frequencia">🔁</span> <b>Maior frequência de compras:</b> {customerStats.highest_frequency.customer.full_name} <br/>
+              <span role="img" aria-label="frequencia"></span> <b>Maior frequência de compras:</b> {customerStats.highest_frequency.customer.full_name} <br/>
               <small>Dias diferentes com compras: {customerStats.highest_frequency.unique_purchase_days}</small>
             </HighlightCard>
           )}
