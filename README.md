@@ -32,11 +32,16 @@ Você pode iniciar a aplicação de duas formas:
 
 ### 1. Utilizando o banco incluso (`db.sqlite3`)
 
-O banco já contém dados de exemplo e um usuário padrão:
+O banco já contém dados de exemplo e dois usuários padrão:
 
 - **Usuário:** teste
 - **Senha:** teste
-- **Token de autenticação (pré-gerado):** SEU_TOKEN_AQUI
+
+- **Usuário:** usuario_teste
+- **Senha:** teste123
+- **Token de autenticação (usuario_teste):** eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzMTA5MTIyLCJpYXQiOjE3NTE1NzMxMjIsImp0aSI6IjVlOTlmZmFiNjhjYjQ2NzBhYmM2NzNkZjg1NmIwMThhIiwidXNlcl9pZCI6MzF9.ZcQ1wIYnnnoPH5CYlWxNYZ93aro89fUtMnd9hbIUatY
+
+
 
 > Este token deve ser colocado no arquivo `.env`, por exemplo:
 >
