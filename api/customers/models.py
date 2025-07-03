@@ -2,16 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 class Customer(AbstractUser):
-    """
-      Model representing a customer in the toy store.
-      
-      Attributes:
-          name: Customer's full name
-          email: Customer's email address (unique)
-          birth_date: Customer's date of birth
-          created_at: Timestamp when customer was created
-          updated_at: Timestamp when customer was last updated
-      """
+
     
     full_name = models.CharField(
         max_length=255,
