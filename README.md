@@ -24,6 +24,43 @@
    pip install pytest pytest-django pytest-cov model_bakery
    ```
 
+## Banco de Dados e Inicialização Rápida
+
+Esta aplicação utiliza o banco de dados SQLite. O arquivo `db.sqlite3` já está incluso no repositório para facilitar os testes e a validação.
+
+Você pode iniciar a aplicação de duas formas:
+
+### 1. Utilizando o banco incluso (`db.sqlite3`)
+
+O banco já contém dados de exemplo e um usuário padrão:
+
+- **Usuário:** teste
+- **Senha:** teste
+- **Token de autenticação (pré-gerado):** SEU_TOKEN_AQUI
+
+> Este token deve ser colocado no arquivo `.env`, por exemplo:
+>
+> ```env
+> TOKEN=SEU_TOKEN_AQUI
+> ```
+
+Assim, é possível autenticar e testar a API imediatamente.
+
+### 2. Criando tudo do zero
+
+Se preferir iniciar com um banco limpo, siga os comandos abaixo:
+
+```bash
+python manage.py migrate
+python manage.py createsuperuser
+```
+
+Após criar o superusuário, gere seu próprio token de autenticação e atualize o `.env` com ele.
+
+---
+
+📝 **Atenção:** Esta documentação permite que avaliadores testem a API tanto com o banco pronto quanto a partir de uma instalação limpa, garantindo praticidade e flexibilidade no processo de validação.
+
 ## Como rodar o projeto
 
 1. Acesse a pasta `api`:
