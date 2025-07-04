@@ -9,7 +9,6 @@ def test_sales_statistics():
     client = APIClient()
     user = baker.make('customers.Customer', password='12345678')
     client.force_authenticate(user=user)
-    # Cria vendas em dias diferentes
     for i in range(3):
         Sale.objects.create(customer=user, amount=100*(i+1), sale_date=date.today() - timedelta(days=i))
     response = client.get('/api/sales/statistics/')
